@@ -49,13 +49,8 @@
                     <td>{{ $account->hobbies }}</td>
                     <td>{{ $account->gender }}</td>
                     <td style="display: flex">
-
-
-
-
-
-
-                        {{-- EDIT --}}
+                    
+                    {{-- EDIT --}}
 
                         <a href="{{ route('accounts.edit', ['account' => $account->id]) }}"
                             class="btn btn-outline-primary btn" data-bs-toggle="modal"
@@ -74,8 +69,6 @@
                                         @include('accounts.edit')
                                     </div>
                                     <div class="modal-footer">
-
-
                                     </div>
                                 </div>
                             </div>
@@ -112,9 +105,7 @@
                             @method('DELETE')
                             @csrf
                             <button type="submit" class="btn btn-outline-danger btn">Delete</button>
-
-
-                    </td>
+                            </td>
                 </tr>
                 </form>
             @endforeach
