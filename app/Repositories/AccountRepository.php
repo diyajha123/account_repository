@@ -26,10 +26,7 @@ class AccountRepository implements AccountRepositoryInterface
     {
     return Account::whereId($id)->update($newDetails);
     }
-    public function getFulfilledAccounts()
-    {
-        return Account::where('is_fulfilled', true);
-    }
+   
 }
 
 
