@@ -64,9 +64,9 @@ class AccountController extends Controller
     /*
      * Remove the specified resource from storage.
      */
-    public function destroy(Account $account)
+    public function destroy($id)
     {
-        $this->accountRepository->deleteAccount($account);
+        $this->accountRepository->deleteAccount($id);
         return redirect()->route('accounts.index')->with('status', 'deleted');
     }
    
